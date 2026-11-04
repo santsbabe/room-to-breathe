@@ -1,5 +1,5 @@
-const VERSION = 'room-to-breathe-v1.0.2';
-const ASSETS = ['./','./index.html','./styles.css','./app.js','./core.js','./manifest.webmanifest','./privacy.html','./assets/icon-192.png','./assets/icon-512.png','./assets/apple-touch-icon.png','./assets/favicon.png'];
+const VERSION = 'room-to-breathe-v1.0.3';
+const ASSETS = ['./','./index.html','./styles.css','./app.js','./core.js','./manifest.webmanifest','./privacy.html','./assets/icon-192.png','./assets/icon-512.png','./assets/apple-touch-icon.png','./apple-touch-icon.png','./assets/favicon.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(VERSION).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
